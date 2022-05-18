@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class HomeActivity extends AppCompatActivity {
 
-    Button button1;
+    Button button1,button2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,15 @@ public class HomeActivity extends AppCompatActivity {
             startActivity(intent);
                 overridePendingTransition(0, 0);
                 ;}
+        });
+        button2=findViewById(R.id.button2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent2=new Intent(HomeActivity.this, RegisterActivity.class);
+                startActivity(intent2);
+                overridePendingTransition(0,0);
+            }
         });
 
 
