@@ -93,7 +93,7 @@
         android:layout_height="45dp"
         android:layout_marginBottom="32dp"
         android:hint="Password"
-        android:inputType="textVisiblePassword"
+        android:inputType="textPassword"
         android:paddingLeft="10dp"
         app:layout_constraintBottom_toTopOf="@+id/confirmpasswordtextview"
         app:layout_constraintEnd_toEndOf="parent"
@@ -120,7 +120,7 @@
         android:layout_height="45dp"
         android:layout_marginBottom="36dp"
         android:hint="Reenter your password"
-        android:inputType="textVisiblePassword"
+        android:inputType="textPassword"
         android:paddingLeft="10dp"
         app:layout_constraintBottom_toTopOf="@+id/checkbox_meat"
         app:layout_constraintEnd_toEndOf="parent"
@@ -128,7 +128,7 @@
         app:layout_constraintStart_toStartOf="parent"></EditText>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonForSignUp"
         android:layout_width="400dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
@@ -145,7 +145,7 @@
         android:onClick="onCheckboxClicked"
         android:text="By Signing up, you agree to the Terms of Service and Privacy Policy"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/buttonForSignUp"
         app:layout_constraintStart_toStartOf="parent" />
     " />
 </androidx.constraintlayout.widget.ConstraintLayout>
