@@ -4,7 +4,9 @@ import static android.content.ContentValues.TAG;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -65,7 +67,16 @@ public class RegisterActivity extends AppCompatActivity {
                             runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {
-                                    Toast.makeText(getApplicationContext(), "Your registration is successful", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "Your registration is successful, you will be redirected to login in 5 seconds", Toast.LENGTH_SHORT).show();
+                                    new Handler().postDelayed(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            Intent intnet=new Intent(RegisterActivity.this, LoginActivity.class);
+                                            startActivity(intnet);
+                                            overridePendingTransition(0, 0);
+
+                                        }
+                                    }, 5000);
                                 }
                             });
                         }

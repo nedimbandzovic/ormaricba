@@ -42,8 +42,9 @@ public class LoginActivity extends AppCompatActivity {
                                 }
                                 });
                             } else{
-                                password.setText("Nice");
-
+                                Intent intent8=new Intent(LoginActivity.this, ProfileActivity.class);
+                                startActivity(intent8);
+                                overridePendingTransition(0, 0);
                             }
                         }
                     }).start();
