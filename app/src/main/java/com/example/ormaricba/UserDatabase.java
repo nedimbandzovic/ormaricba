@@ -6,7 +6,7 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
-@Database(entities={User.class},version=2)
+@Database(entities={User.class},version=3)
 public abstract class UserDatabase extends RoomDatabase {
 
     private static final String dbName="users";
@@ -15,8 +15,8 @@ public abstract class UserDatabase extends RoomDatabase {
     public static synchronized UserDatabase getUserDatabase (Context context){
 
         if(userDatabase==null){
-            userDatabase= Room.databaseBuilder(context, UserDatabase.class, dbName).fallbackToDestructiveMigration().
-                    build();
+            userDatabase= Room.databaseBuilder(context, UserDatabase.class, dbName).fallbackToDestructiveMigration().allowMainThreadQueries()
+                    .build();
         }
 
         return userDatabase;

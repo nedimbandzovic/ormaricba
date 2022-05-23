@@ -46,6 +46,7 @@ public class RegisterActivity extends AppCompatActivity {
                 user.setName(name.getText().toString());
                 user.setEmail(email.getText().toString());
                 user.setPassword(password.getText().toString());
+                user.setProfilePhoto(null);
 
                 if (!validateInput(user)){
                     Toast.makeText(getApplicationContext(), "You have to fill in all the fields", Toast.LENGTH_SHORT).show();

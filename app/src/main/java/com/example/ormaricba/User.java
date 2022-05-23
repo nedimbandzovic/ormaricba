@@ -1,4 +1,6 @@
 package com.example.ormaricba;
+import android.net.Uri;
+
 import androidx.room.Entity;
 import androidx.room.ColumnInfo;
 import androidx.room.PrimaryKey;
@@ -16,6 +18,9 @@ public class User {
     @ColumnInfo (name="password")
     String password;
 
+    @ColumnInfo (name="profilephoto")
+    String profilephoto;
+
     public Integer getId() {
         return id;
     }
@@ -23,6 +28,10 @@ public class User {
     public void setId(Integer id) {
         this.id = id;
     }
+
+    public String getProfilePhoto() { return profilephoto;}
+
+    public void setProfilePhoto (String photo) {this.profilephoto=photo;}
 
     public String getName() {
         return name;

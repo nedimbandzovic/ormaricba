@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "544571769465",
+    "project_id": "ormaric-ba",
+    "storage_bucket": "ormaric-ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544571769465:android:85655ac268a341ec2bcaa8",
+        "android_client_info": {
+          "package_name": "com.example.ormaricba"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "544571769465-qent8q19cau10c32r92mg5rsquii80pg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHMP651HRGacnDWeXD2PXuFIyt3juDZDk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "544571769465-qent8q19cau10c32r92mg5rsquii80pg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
